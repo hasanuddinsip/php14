@@ -67,8 +67,33 @@
     endforeach;
     ?>
 
+    <!-- contoh lain -->
 
+    <?php
+    $angka = array(
+        // key => value
+        'Sosiologi' => 89,
+        'Hukum' => 96,
+        'Psikologi' => 87,
+    );
+    echo "ambil nilai" . $angka['Sosiologi'] . "<br>";
+    echo "ambil nilai" . $angka['Hukum'] . "<br>";
+    echo "ambil nilai" . $angka['Psikologi'] . "<br>";
+    echo "<br>";
+    echo "<br>";
+    ?>
 
+    <?php
+    foreach ($angka as $nilaiips => $welehweleh) :
+    ?>
+
+        <ul>
+            <li><?php echo "Nilai Matkul  : $nilaiips, adalah : $welehweleh " ?> </li>
+        </ul>
+
+    <?php
+    endforeach;
+    ?>
 </body>
 
 </html>
